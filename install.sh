@@ -4,7 +4,7 @@
 
 GALAXY_DIRECTORY="/home/export/galaxy-central"
 MSWSS_DIRECTORY="${GALAXY_DIRECTORY}/tools_mswss"
-PLUGIN_DIRECTORY=$"${PLUGIN_DIRECTORY}/dataverse"
+PLUGIN_DIRECTORY="${PLUGIN_DIRECTORY}/dataverse"
 
 mkdir $PLUGIN_DIRECTORY
 
@@ -19,7 +19,7 @@ mv  -v ./source/* $PLUGIN_DIRECTORY/
 chmod u=rwx,g=rwx,o=rwx -R $PLUGIN_DIRECTORY/
 
 #echo 'tool_config_file: tool_conf.xml' >> ${GALAXY_DIRECTORY}/config/galaxy.yml
-#echo 'library_import_dir: /export/ftp' >> ${GALAXY_DIRECTORY}/config/galaxy.yml
+#echo 'library_import_dir: /home/export/ftp' >> ${GALAXY_DIRECTORY}/config/galaxy.yml
 
 #docker restart galaxy
 docker exec galaxy supervisorctl restart galaxy:
