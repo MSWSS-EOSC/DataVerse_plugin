@@ -4,7 +4,7 @@
 
 GALAXY_DIRECTORY="/home/export/galaxy-central"
 MSWSS_DIRECTORY="${GALAXY_DIRECTORY}/tools_mswss"
-PLUGIN_DIRECTORY="${PLUGIN_DIRECTORY}/dataverse"
+PLUGIN_DIRECTORY="${MSWSS_DIRECTORY}/dataverse"
 
 mkdir $PLUGIN_DIRECTORY
 
